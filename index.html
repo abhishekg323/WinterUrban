@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>urban WebPage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("navbar.html");
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
     <div class="container">
-      <div class="navbar">
-          <img src="img/logo.png" alt="logo" class="logo">
-          <nav>
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="login.html" target="_blank">Login</a></li>
-                  <li><a href="#"></a>Collections</li>
-                  <li><a href="#"></a>Categories</li>
-              </ul>
-          </nav>
-          <img src="img/cart.png" alt="cart" class="cart">
-      </div> 
       <div class="content">
           <a href="items.html" target="_blank" class="btn">2020 Collections</a>
           <h1>Winter Collection<br><strong>40%</strong> off</h1>
@@ -29,17 +27,9 @@
               <img src="img/next-arrow.png" alt="next-arrow" >
           </div>
           <img src="img/img.png" alt="FeaturePic" class="FeaturePic">
-          <div class="social-links">
-              <a href="#">Facebook</a>
-              <a href="#">Instagram</a>
-              <a href="#">Twitter</a>
-          </div>
-
-
       </div>
-      
-
     </div>
+    <div id="footer-placeholder"></div>
     
 </body>
 </html>

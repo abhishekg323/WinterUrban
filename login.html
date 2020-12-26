@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="login-style.css" />
   </head>
   <body>
-    
-    <nav class="navbar">
-      <img src="img/logo.png" alt="logo" class="logo" />
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Collections</a>
-      <a href="#">Categories</a>
-    </nav>
+    <div style="min-height: 100vh;">
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("navbar.html");
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
     <div class="body2">
       <h1>Login</h1>
 
@@ -30,12 +36,10 @@
           ><span class="content-name">Password</span></label
         >
       </div>
-
-      <div class="form">
-        <a href="#" class="btn">Login</a>
-      </div>
-
-      <!-- </div> -->
+      <a href="#" class="btn">Login</a>
     </div>
+    <div style="display: inline-block; border-bottom: 5px solid black;"></div>
+  </div>
+    <div id="footer-placeholder"></div>
   </body>
 </html>

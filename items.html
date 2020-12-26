@@ -1,62 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Items</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-      <div class="navbar">
-          <img src="img/logo.png" alt="logo" class="logo">
-          <nav>
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#"></a>Collections</li>
-                  <li><a href="#"></a>Categories</li>
-              </ul>
-          </nav>
-          <img src="img/cart.png" alt="cart" class="cart">
-      </div> 
-      <div class="content">
-        <div class="gallery">
-            <a target="_blank" href="img/img_hud_jacket.jpg">
-              <img src="img/img_hud_jacket.jpg" alt="Hoodie" width="250px">
-            </a>
-            <div class="desc">Awesome Hoodie</div>
-            <div class="price">
-                <span>Rs. 2000</span>
-                <a>Add to Cart</a>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="items-style.css" />
+    <script src="items.js"></script>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("navbar.html");
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+    <h1>Collections</h1>
+    <div class="collections">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="img/img_casual_jacket.jpg" alt="" />
+            <h3>Casual Jacket</h3>
+            <div class="price-div">
+              <p>Rs. 3999</p>
+              <i
+                class="fa fa-cart-plus add-cart"
+                onclick="addItemsToCart(1)"
+              ></i>
             </div>
           </div>
-          
-          <div class="gallery">
-            <a target="_blank" href="img/img_casual_jacket.jpg">
-              <img src="img/img_casual_jacket.jpg" alt="Casual Jacket" width="250px">
-            </a>
-            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="img/img_coat.jpg" alt="" />
+            <h3>Long Blazer</h3>
+            <div class="price-div">
+              <p>Rs. 3999</p>
+              <i
+                class="fa fa-cart-plus add-cart"
+                onclick="addItemsToCart(2)"
+              ></i>
+            </div>
           </div>
-          
-          <div class="gallery">
-            <a target="_blank" href="img/img_coat.jpg">
-              <img src="img/img_coat.jpg" alt="Coat" width="250px">
-            </a>
-            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="img/img_full_jacket.jpg" alt="" />
+            <h3>FullSleeves Jacket</h3>
+            <div class="price-div">
+              <p>Rs. 3999</p>
+              <i
+                class="fa fa-cart-plus add-cart"
+                onclick="addItemsToCart(3)"
+              ></i>
+            </div>
           </div>
-          
-          <div class="gallery">
-            <a target="_blank" href="img/img_full_jacket.jpg">
-              <img src="img/img_full_jacket.jpg" alt="Full Jacket" width="250px">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
-
+        </div>
       </div>
-      
-
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="img/img_hud_jacket.jpg" alt="" />
+            <h3>Hood Jacket</h3>
+            <div class="price-div">
+              <p>Rs. 3999</p>
+              <i
+                class="fa fa-cart-plus add-cart"
+                onclick="addItemsToCart(4)"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="img/img_fur_jacket.jpg" alt="">
+            <h3>Casual Jacket with Fur Hoodie</h3>
+            <div class="price-div">
+              <p>Rs. 3999</p>
+              <i
+                class="fa fa-cart-plus add-cart"
+                onclick="addItemsToCart(5)"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="img/img_blue_sweater.jpg" alt="">
+            <h3>Blue and White Hoodie</h3>
+            <div class="price-div">
+              <p>Rs. 3999</p>
+              <i
+                class="fa fa-cart-plus add-cart"
+                onclick="addItemsToCart(6)"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+
+    <div id="footer-placeholder"></div>
+  </body>
 </html>

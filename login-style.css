@@ -1,117 +1,99 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
-body{
-    background: url(img/background.png);
-}
-
-.body2{
-    height: 60vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    font-family: sans-serif;
-    
-}
-.form{
-    width: 30%;
-    position: relative;
-    height: 50px;
-    overflow: hidden;
-}
-h1{
-    position: relative;
-}
-.form, h1{
-    top: 10%;
-    
+body {
+  background: url(img/background.png);
+  height: 100%;
 }
 
-.logo{
-    width: 160px;
-    cursor: pointer;
+.body2 {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
+.form {
+  width: 30%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+h1 {
+  position: relative;
+}
+.form,
+h1 {
+  top: 10%;
 }
 
 .btn {
-   
-    display: flex;
-    background: linear-gradient(45deg, #87adfe,#ff77cd);
-    border-radius: 6px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
-
+  display: flex;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  margin-top: 30px;
 }
 
-.form input{
-    width: 100%;
-    height:100%;
-    color: #015880;
-    background: none;
-    padding-top: 20px;
-    border: none;
-    outline: none;
+.form input {
+  width: 100%;
+  height: 100%;
+  color: #015880;
+  background: none;
+  padding-top: 20px;
+  border: none;
+  outline: none;
 }
 
 .form label {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
 }
 
 .form label::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    border-bottom: 3px solid #015880;
-    left: 0px;
-    bottom: -1px;
-    transform: translateX(-100%);
-    transition: all 0.5s ease;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-bottom: 3px solid #015880;
+  left: 0px;
+  bottom: -1px;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
 }
 .content-name {
-    position: absolute;
-    bottom: 5px;   
-    left: 0px;
-    transition: all 0.3s ease;
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
 }
 
-.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name , .form input:hover + .label-name .content-name{
-    transform: translateY(-150%);
-    font-size: 14px;
-    color: #015880;
-
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name,
+.form input:hover + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #015880;
 }
 
-
-.form input:focus+ .label-name::after, .form input:valid + .label-name::after , .form input:hover + .label-name::after{
-    transform: translateX(0%);
-}
-
-
-
-
-
-.navbar{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after,
+.form input:hover + .label-name::after {
+  transform: translateX(0%);
 }
