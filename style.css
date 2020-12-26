@@ -1,21 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 body {
   background-image: url(img/background.png);
+  height: 100vh;
+  position: relative;
 }
 
 .container {
   width: 90%;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   padding-left: 5%;
   padding-right: 5%;
-  
-
 }
 
 .content h1 {
@@ -35,7 +34,6 @@ body {
 .content {
   margin-left: 10%;
   margin-top: 10%;
-  
 }
 
 .btn {
@@ -47,21 +45,6 @@ body {
   text-decoration: none;
   color: #fff;
   box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
-}
-
-.arrow-icons {
-  margin-top: 40px;
-  display: flex;
-}
-
-.arrow-icons img {
-  width: 40px;
-  margin-right: 25px;
-  cursor: pointer;
-}
-
-.arrow-icons img[alt="next-arrow"] {
-  margin-right: 0px;
 }
 
 .FeaturePic {

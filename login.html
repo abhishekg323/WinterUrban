@@ -13,33 +13,33 @@
     <link rel="stylesheet" href="login-style.css" />
   </head>
   <body>
-    <div style="min-height: 100vh;">
-    <div id="nav-placeholder"></div>
-    <script>
-      $(function () {
-        $("#nav-placeholder").load("navbar.html");
-        $("#footer-placeholder").load("footer.html");
-      });
-    </script>
-    <div class="body2">
-      <h1>Login</h1>
+    <div style="min-height: 100vh">
+      <div id="nav-placeholder"></div>
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("navbar.html");
+          $("#footer-placeholder").load("footer.html");
+        });
+      </script>
+      <div class="body2">
+        <h1>Login</h1>
 
-      <div class="form">
-        <input type="email" autocomplete="off" name="email" required />
-        <label for="email" class="label-name"
-          ><span class="content-name">Email</span></label
-        >
+        <div class="form">
+          <input type="email" autocomplete="off" name="email" required />
+          <label for="email" class="label-name"
+            ><span class="content-name">Email</span></label
+          >
+        </div>
+        <div class="form">
+          <input type="password" autocomplete="off" name="password" required />
+          <label for="password" class="label-name"
+            ><span class="content-name">Password</span></label
+          >
+        </div>
+        <a href="#" class="btn">Login</a>
       </div>
-      <div class="form">
-        <input type="password" autocomplete="off" name="password" required />
-        <label for="password" class="label-name"
-          ><span class="content-name">Password</span></label
-        >
-      </div>
-      <a href="#" class="btn">Login</a>
+      <div style="display: inline-block; border-bottom: 5px solid black"></div>
     </div>
-    <div style="display: inline-block; border-bottom: 5px solid black;"></div>
-  </div>
     <div id="footer-placeholder"></div>
   </body>
 </html>
