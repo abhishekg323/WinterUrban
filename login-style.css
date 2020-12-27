@@ -31,7 +31,6 @@ h1 {
 h1 {
   top: 10%;
 }
-
 .btn {
   display: flex;
   background: linear-gradient(45deg, #87adfe, #ff77cd);
@@ -44,6 +43,11 @@ h1 {
   align-items: center;
   box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
   margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.3);
 }
 
 .form input {
@@ -75,7 +79,7 @@ h1 {
   left: 0px;
   bottom: -1px;
   transform: translateX(-100%);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .content-name {
   position: absolute;

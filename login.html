@@ -20,9 +20,12 @@
           $("#nav-placeholder").load("navbar.html");
           $("#footer-placeholder").load("footer.html");
         });
+        function backend() {
+          alert("Backend Not Built");
+        }
       </script>
       <div class="body2">
-        <h1>Login</h1>
+        <h1>Login to Urban Fashion</h1>
 
         <div class="form">
           <input type="email" autocomplete="off" name="email" required />
@@ -36,9 +39,8 @@
             ><span class="content-name">Password</span></label
           >
         </div>
-        <a href="#" class="btn">Login</a>
+        <a href="#" class="btn" onclick="backend()">Login</a>
       </div>
-      <div style="display: inline-block; border-bottom: 5px solid black"></div>
     </div>
     <div id="footer-placeholder"></div>
   </body>

@@ -14,8 +14,8 @@ h1 {
   margin: 5px;
 }
 .collections {
-  width: 100%;
-  padding: 5px;
+  width: 90%;
+  padding: 5%;
 }
 
 .column {
@@ -23,6 +23,10 @@ h1 {
   width: 30%;
   padding: 0 10px;
   margin: 10px;
+  transition: all 0.3s ease;
+}
+.column:hover {
+  transform: scale(1.1);
 }
 
 /* Style the counter cards */
@@ -35,7 +39,7 @@ h1 {
 
 .card img {
   width: 100%;
-  height: 420px;
+  height: 400px;
 }
 
 .price-div {
@@ -46,6 +50,12 @@ h1 {
 .add-cart {
   cursor: pointer;
   color: #87adfe;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.add-cart:hover {
+  transform: scale(1.4);
 }
 
 /* Remove extra left and right margins, due to padding */
